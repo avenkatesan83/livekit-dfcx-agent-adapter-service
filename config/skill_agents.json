@@ -1,0 +1,40 @@
+{
+  "skill_agents": [
+    {
+      "id": "itss-dialogflow-cx",
+      "name": "IT Service Desk Dialogflow CX",
+      "description": "Handles IT Service Desk requests (password reset, account unlock, incidents).",
+      "capabilities": ["it service desk"],
+      "project_id": "${ITSS_DFCX_PROJECT_ID}",
+      "agent_id": "${ITSS_DFCX_AGENT_ID}",
+      "location": "${ITSS_DFCX_LOCATION}",
+      "environment": "${ITSS_DFCX_ENVIRONMENT}",
+      "language_code": "${ITSS_DFCX_LANGUAGE_CODE}",
+      "enabled": true
+    },
+    {
+      "id": "hr-dialogflow-cx",
+      "name": "HR Dialogflow CX",
+      "description": "Handles HR requests (PTO balance, benefits enrollment, payroll questions).",
+      "capabilities": ["pto balance", "benefits enrollment", "payroll question"],
+      "project_id": "${HRSS_DFCX_PROJECT_ID}",
+      "agent_id": "${HRSS_DFCX_AGENT_ID}",
+      "location": "${HRSS_DFCX_LOCATION}",
+      "environment": "${HRSS_DFCX_ENVIRONMENT}",
+      "language_code": "${HRSS_DFCX_LANGUAGE_CODE}",
+      "enabled": false
+    },
+    {
+      "id": "finance-dialogflow-cx",
+      "name": "Finance Dialogflow CX",
+      "description": "Handles Finance requests (expense reports, invoice status, budget inquiries).",
+      "capabilities": ["expense report", "invoice status", "budget inquiry"],
+      "project_id": "${FSS_DFCX_PROJECT_ID}",
+      "agent_id": "${FSS_DFCX_AGENT_ID}",
+      "location": "${FSS_DFCX_LOCATION}",
+      "environment": "${FSS_DFCX_ENVIRONMENT}",
+      "language_code": "${FSS_DFCX_LANGUAGE_CODE}",
+      "enabled": false
+    }
+  ]
+}
